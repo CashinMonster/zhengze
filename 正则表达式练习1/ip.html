@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		
+//		var str = "1.001.1.1";
+//		var str = "1.1.1.1";
+//		var str = "255.255.1.256";
+//		var str = "56.1.1.1";
+		var str = "254.1.9.99";
+		
+		var reg = /^([1-9]|1\d\d|2[0-4]\d|25[0-5]|[1-9]\d)\.(\d|1\d\d|2[0-4]\d|25[0-5]|[1-9]\d)\.(\d|1\d\d|2[0-4]\d|25[0-5]|[1-9]\d)\.(\d|1\d\d|2[0-4]\d|25[0-5]|[1-9]\d)$/;
+		
+		
+		alert(reg.test(str));
+		
+	</script>
+</html>

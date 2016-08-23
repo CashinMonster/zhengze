@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script type="text/javascript">
+		
+		var str = "fds123dsf34fd34";
+		
+		//[123,34,34]
+		var str2 = "";
+		var arr = [];
+		for (var i=0; i<str.length; i++){
+			if (str[i]>=0&&str[i]<=9){
+				str2+=str[i];
+			}else{
+				if (str2!=""){
+					arr.push(str2);
+					str2="";
+				}
+			}
+		}
+		if (str2!=""){
+			arr.push(str2);
+		}
+		alert(arr);
+	</script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</html>

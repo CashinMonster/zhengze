@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<a href="###">1</a>
+		<a class="active show" href="###">2</a>
+		<a class="active" href="###">3</a>
+		<a href="###">4</a>
+	</body>
+	<script type="text/javascript">
+		function byClass(parent,className){
+			
+			var els = parent.getElementsByTagName("*");
+			var arr = [];
+			
+			for (var i=0; i<els.length; i++){
+				if (els[i].className == className){
+					arr.push(els[i]);
+				}
+			}
+			return arr;
+		}
+		
+		var links = byClass(document,"active");
+		alert(links.length);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	</script>
+</html>
